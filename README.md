@@ -21,3 +21,20 @@ In this course, a final programming project will take the place of formal exams 
 
 
 Within those boundaries, your team may write any kind of web app you want.  There are infinite possibilities, and I encourage you to be creative and to implement an application you find interesting or that solves a real problem for some set of potential users.  Below are some guidelines and logistics for the final project.
+
+
+<b>Grading criteria</b>
+Your team’s grade (out of 100 points) for the final project will be based on successfully implementing a complete web app that satisfies these criteria:
+
+--The app uses HTML and CSS to implement a well-designed client interface.
+
+--The app uses client-side JS to enable relevant user interactions with the client interface.
+
+--The app is served using a Node.js-based (or other approved) serving stack.
+
+--The app dynamically generates pages based on data stored in a back end data store.
+
+--The app’s client interface communicates with the app’s server to create, read, update, and/or delete content in the back end data store.
+
+
+Tip : we can use thirdparty libraries and other tools. This'll make things easier but we have to learn how to implement them.
