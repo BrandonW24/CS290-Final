@@ -24,6 +24,7 @@ Within those boundaries, your team may write any kind of web app you want.  Ther
 
 
 <b>Grading criteria</b>
+
 Your team’s grade (out of 100 points) for the final project will be based on successfully implementing a complete web app that satisfies these criteria:
 
 --The app uses HTML and CSS to implement a well-designed client interface.
