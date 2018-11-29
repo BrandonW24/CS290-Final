@@ -3,3 +3,13 @@ body{
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 
 }
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+
