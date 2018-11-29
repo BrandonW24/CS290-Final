@@ -11,7 +11,11 @@ header {
     display: flex;
     position: relative;
   }
+h2{
 
+    text-align: center;
+
+}
 
 h3 {
     text-align: center;
