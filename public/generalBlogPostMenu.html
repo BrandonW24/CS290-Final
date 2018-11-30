@@ -18,3 +18,24 @@
 
 
 </html>
+
+<!-- use json
+var peopleData = require('./peopleData');
+-->
+
+<!-- in JS
+if(peopleData[person]){
+	res.render('photoPage', peopleData[person]);
+	
+}else{
+	next();
+}
+-->
+
+<!-- HTML
+{{{body}}} //triple brackets because that's what'll let us plug HTML into that location
+-->
+
+<!-- in JS
+app.engine('handlebars', exphbs((defaultLayout: 'main'))); //use every time res.render is called
+-->
