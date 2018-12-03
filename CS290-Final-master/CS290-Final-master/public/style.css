@@ -1,7 +1,7 @@
 body{
 
     font-family: "Garamond", "Comic Sans", cursive; 
-	font-size: 18px;
+	font-size: 24px;
 	background-color: gray;
 	color: black
 }
@@ -15,7 +15,7 @@ header {
   }
   
 a {
-	color: black;
+	color: #68babd;
 	text-decoration: none;
 }
 
@@ -31,7 +31,7 @@ nav{
   margin: 3px 5px;
   border: 1px solid #ababab;
   border-radius: 3px;
-  background: #f67811;
+  background: #1b2122;
 }
 
 .menu-items:hover{
