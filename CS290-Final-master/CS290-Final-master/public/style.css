@@ -92,3 +92,32 @@ h3 {
   max-height: 240px;
   max-width: 300px;
 }
+
+
+.button{
+  font-family: "Garamond", "Comic Sans", cursive;
+  font-size:14px;  
+  background-color:#1b2122;
+  color:#68babd;
+  border:0;
+}
+
+.button:hover{
+
+  background:#68babd;
+  color:#1b2122;
+
+}
+
+.modal{
+
+  position:fixed;
+  z-index:1;
+  left: 0;
+  top: 0;
+  height:100%;
+  width:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+
+}
