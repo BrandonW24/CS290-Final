@@ -1,11 +1,22 @@
  var http = require('http');
  var fs	= require('fs');
+var path = require('path');
+var express = require('express');
+var app = express();
+var expHanBars = require('express-handlebars');
+
+//app.engine('handlebars', expHanBars({defaultLayout : 'main' }) );
+//app.set('view engine', 'handlebars');
+
+//app.use(express.static('public'));
+
 
 function requestHandler(req, res) {
   console.log("== Request was received");
   console.log("  - method:", req.method);
   console.log("  - url:", req.url);
   console.log("  - headers:", req.headers);
+
 
 //display content when / is entered
 	if(req.method == "GET" && req.url == '/' ){
