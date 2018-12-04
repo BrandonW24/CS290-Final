@@ -148,8 +148,15 @@ h3 {
   color:#ccc;
   float:right;
   font-size: 50px;
+  animation-name:GOODBYE;
+  animation-duration:3s;
 
 }
+@keyframes GOODBYE{
+  from{opacity:1};
+  to{opacity:0};
+}
+
 
 .closeBUTT:hover,.closeBUTT:focus{
 
