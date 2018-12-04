@@ -1,4 +1,4 @@
-
+//modal variables
 var modal = document.getElementById('modal-thing');
 
 var button = document.getElementById('modalButt');
