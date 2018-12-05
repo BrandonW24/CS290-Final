@@ -8,7 +8,7 @@ var expHanBars = require('express-handlebars');
 //app.engine('handlebars', expHanBars({defaultLayout : 'main' }) );
 //app.set('view engine', 'handlebars');
 
-//app.use(express.static('public'));
+app.use(express.static('public'));
 
 
 function requestHandler(req, res) {
@@ -64,3 +64,11 @@ server.listen(port, function (err) {
   }
   console.log("== Server is listening on port: ", port);
 });
+
+// var port = process.env.PORT || 1945 || 3000;
+
+// app.listen(port, function(){
+
+// 	console.log("Server has ears on port : ", port);
+
+// });
