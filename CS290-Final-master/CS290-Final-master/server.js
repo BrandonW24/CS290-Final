@@ -53,7 +53,8 @@ function requestHandler(req, res) {
 			});	
 	}
 	}
-/*
+}
+
 var server = http.createServer(requestHandler);
 // specify ports to listen on
 var	port = process.env.PORT || 1945 || 3000		//added port 1945 because 3000 normally doesn't work 
@@ -63,4 +64,3 @@ server.listen(port, function (err) {
   }
   console.log("== Server is listening on port: ", port);
 });
-*/

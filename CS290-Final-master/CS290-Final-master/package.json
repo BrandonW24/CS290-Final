@@ -1,13 +1,11 @@
 {
-    "name": "cs290 final prjecto",
+    "name": "cs290-final-prjecto",
     "version": "1.0.0",
     "description": "final project",
     "main": "server.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "Start": "node server.js"
-        //"build": "handlebars views/Partials/postTemplate.handlebars -f public/postTemp.js",
-        //"prestart": "npm run build"
     },
     "repository": {
         "type": "git",
