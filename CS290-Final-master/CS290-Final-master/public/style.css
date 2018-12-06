@@ -109,6 +109,17 @@ h3 {
 
 }
 
+legend{
+	color: black;
+	font-family: "Garamond", "Comic Sans", cursive; 
+	font-size: 20px;	
+}
+
+fieldset{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	font-size: 15px;
+}
 .modal{
 
   display:none;
