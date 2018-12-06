@@ -35,7 +35,9 @@ function outOftheModalClick(e){
 
 //******************************End of Modal listener stuff*********************
 
-//***************Text Input listener things *************************************//
+
+//***************Text Input listener things ********************//
+
 postCategory.addEventListener('click', function(){
     console.log("==A Category was selected");
 
@@ -56,3 +58,5 @@ userInputTextPost.addEventListener('keyup', function (ui) {
     console.log(" User input here : ", userInputTextPost);
 
 });
+
+//***************End of Text Input listener things ***************//
