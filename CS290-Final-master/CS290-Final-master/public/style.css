@@ -111,7 +111,7 @@ h3 {
 
 legend{
 	color: black;
-	font-family: "Garamond", "Comic Sans", cursive; 
+	font-family: 'Oswald' cursive; 
 	font-size: 20px;	
 }
 
@@ -119,6 +119,24 @@ fieldset{
 	font-family: 'Oswald', sans-serif;
 	color: black;
 	font-size: 15px;
+}
+
+input[type=submit] {
+	display: block;
+    margin: 10px auto;
+    padding:8px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	background:#68babd;
+	color:#1b2122;
 }
 .modal{
 
@@ -133,7 +151,7 @@ fieldset{
   background-color: rgba(255, 255, 255, 0.93);
   color:white;
   animation-name:ThereHeIs;
-  animation-duration:3s;
+  animation-duration:1s;
 
 }
 
