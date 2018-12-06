@@ -11,6 +11,21 @@ var expHanBars = require('express-handlebars');
 app.use(express.static('public'));
 
 
+app.get("/", function (req, res) {
+
+	res.sendFile(__dirname + "/public/welcomePage.html");
+
+});
+
+
+app.get("/style.css", function (req, res) {
+
+	res.sendFile(__dirname + "/public/style.css");
+
+});
+
+
+
 function requestHandler(req, res) {
   console.log("== Request was received");
   console.log("  - method:", req.method);
@@ -55,20 +70,20 @@ function requestHandler(req, res) {
 	}
 }
 
-var server = http.createServer(requestHandler);
-// specify ports to listen on
-var	port = process.env.PORT || 1945 || 3000		//added port 1945 because 3000 normally doesn't work 
-server.listen(port, function (err) {
-  if (err) {
-    throw err;
-  }
-  console.log("== Server is listening on port: ", port);
-});
-
-// var port = process.env.PORT || 1945 || 3000;
-
-// app.listen(port, function(){
-
-// 	console.log("Server has ears on port : ", port);
-
+// var server = http.createServer(requestHandler);
+// // specify ports to listen on
+// var	port = process.env.PORT || 1945 || 3000		//added port 1945 because 3000 normally doesn't work 
+// server.listen(port, function (err) {
+//   if (err) {
+//     throw err;
+//   }
+//   console.log("== Server is listening on port: ", port);
 // });
+
+var port = process.env.PORT || 1945 || 3000;
+
+app.listen(port, function(){
+
+	console.log("Server has ears on port : ", port);
+
+});
