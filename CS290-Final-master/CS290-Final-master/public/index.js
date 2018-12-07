@@ -98,7 +98,7 @@ submitButt.addEventListener('click', function(event){
 	var textContainerDiv = document.createElement('div');
 	textContainerDiv.classList.add('text-class');
 	contentDiv.appendChild(textContainerDiv);
-	
+	poop;
 	
 	var newDescription = document.createTextNode(description.value);
 	var newPhotoURL = document.createTextNode(photoURL);
