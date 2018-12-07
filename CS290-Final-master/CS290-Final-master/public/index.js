@@ -79,24 +79,33 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	parent = document.getElementById('posts');
-	var postInfoContainer = document.createElement('div');
+	//parent = document.getElementById('posts');
+	var postSpan = document.createElement('span');
+	postSpan.classList.add('menu-items');
+	
+	var contentDiv = document.createElement('div');
+	contentDiv.classList.add('post-class');
+	postSpan.appendChild(contentDiv);
+	
+	var imageDiv = document.createElement('div');
+	imageDiv.classList.add('photo-class');
+	contentDiv.appendChild(imageDiv);
+	
+	var postImage = document.createElement('img');
+	postImage.src = photoURL;
+	imageDiv.appendChild(postImage);
+	
+	var textContainerDiv = document.createElement('div');
+	textContainerDiv.classList.add('text-class');
+	contentDiv.appendChild(textContainerDiv);
+	
 	
 	var newDescription = document.createTextNode(description.value);
 	var newPhotoURL = document.createTextNode(photoURL);
 	var newPost = document.createElement('div');
 	
 	newPost.classList.add('post');
-	
-	var postImageContainer = document.createElement('div');
-	postImageContainer.classList.add('post-image-container');
-	newPost.appendChild(postImageContainer);
-	
-	var postImage = document.createElement('img');
-	postImage.classList.add('post-image-container');
-	
-//	postImage.setAttribute('src', photoURL);	// causes error
-	
+
 	postImageContainer.appendChild(postImage);
 	
 	var postContents = document.createElement('div');
@@ -104,22 +113,20 @@ submitButt.addEventListener('click', function(event){
 	newPost.appendChild(postInfoContainer);
 	newPost.appendChild(postContents);
 	
-		parent.appendChild(newPost);
+	var content = document.createElement('p');
+	content.classList.add('cool-story');
+	content.textContent = description;
+	postContents.appendChild(content);
+	
+	var postsSection = document.getElementById('posts');
+	blogSection.appendChild(postSpan);
+			
+		modal.style.display ='none';
 			
 	}
-
-    modal.style.display ='none';
-
 });
 
 //******************************End of Modal listener stuff*********************
-
-
-//***************Text Input listener things ********************//
-
-
-
-//***************End of Text Input listener things ***************//
 
 //******Listener for the dollar generator ******************//
 
