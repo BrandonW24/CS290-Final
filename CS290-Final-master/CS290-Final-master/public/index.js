@@ -175,3 +175,12 @@ function addBlog(photoURL, category, textInput) {
   postsSection.appendChild(postDiv);
 
 }
+
+
+var bigPostThing = document.getElementById("bigPostContainer");
+var createAdivPost = document.createElement("div");
+createAdivPost.id = "posts";
+
+var createAnImgDiv = document.createElement("div");
+createAnImgDiv.id = "postPhoto";
+ 
