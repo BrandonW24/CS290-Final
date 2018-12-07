@@ -7,22 +7,12 @@
         transform: rotateX(-20deg);
 	}
 
-	3%{
-		 margin-left: -2%;
-		     -webkit-transform: rotateX(-80deg);
-          transform: rotateX(-80deg);
-	}
-
 	7% {
 		margin-left:1%
 		 -webkit-transform: rotateX(-170deg);
           transform: rotateX(-170deg);
 	}
-  10% {
-    margin-left: 2%;
-	  -webkit-transform: rotateX(-230deg);
-          transform: rotateX(-230deg);
-     }
+
    16% {
    		margin-left: 5%;
    	    	  -webkit-transform: rotateX(-250deg);
@@ -34,23 +24,11 @@
           transform: rotateX(-280deg);
    }
 
-  28% {
-    margin-left: 0%;
-    	  -webkit-transform: rotateX(-300deg);
-          transform: rotateX(-300deg);
-     }
-
   35% {
   	margin-left: 3.5%;
   	  -webkit-transform: rotateX(-310deg);
           transform: rotateX(-310deg);
   }
-
-  48% {
-    margin-left: 1%;
-     -webkit-transform: rotateX(-350deg);
-          transform: rotateX(-350deg);
-     }
 
    58% {
    	margin-left: 3.5%;
@@ -63,13 +41,6 @@
    	   	 -webkit-transform: rotateX(-280deg);
           transform: rotateX(-280deg);
    }
-
-  83% {
-    margin-left: -2%;
-     -webkit-transform: rotateX(-230deg);
-          transform: rotateX(-230deg);
-
-}
 
   95% {
     margin-left: 2%;
