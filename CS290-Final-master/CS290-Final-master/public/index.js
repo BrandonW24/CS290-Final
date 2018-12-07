@@ -38,12 +38,14 @@ function outOftheModalClick(e){
 }
 
 console.log("rrrrrrrrr ", userInputTextPost);
-
+/*
 postCategory.addEventListener('click', function(ui){
     console.log("==A Category was selected", ui.target.value);
     userSelectedCat = ui.target.value;
 
 });
+
+
 
 userInputPhotoURL.addEventListener('keyup', function(ui){
 
@@ -61,7 +63,9 @@ userInputTextPost.addEventListener('keyup', function (ui) {
 
 });
 
+
 userInputTextPost;
+*/
 
 submitButt.addEventListener('click', function(event){
 	//modal info 
@@ -100,7 +104,6 @@ submitButt.addEventListener('click', function(event){
 	textContainerDiv.classList.add('text-class');
 	contentDiv.appendChild(textContainerDiv);
 	
-
 	var postContents = document.createElement('div');
 	postContents.classList.add('post-contents');
 	newPost.appendChild(postInfoContainer);
@@ -111,7 +114,7 @@ submitButt.addEventListener('click', function(event){
 	content.textContent = description;
 	postContents.appendChild(content);
 	
-	var postsSection = document.getElementById('posts');
+	var postsSection = document.getElementById('blorgs');
 	blogSection.appendChild(postSpan);
 			
 		modal.style.display ='none';
