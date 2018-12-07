@@ -11,6 +11,7 @@ window.addEventListener('click', outOftheModalClick);
 var postCategory = document.getElementById("post-category-fieldset");
 var userInputPhotoURL = document.getElementById("photoURLinput");
 var userInputTextPost = document.getElementById("userInpText");
+var submitButt = document.getElementById("submit-butt");
 
 //getting button element for the money $$$$
 var moneyButt = document.getElementById("moneyButt");
@@ -36,10 +37,7 @@ function outOftheModalClick(e){
 
 }
 
-//******************************End of Modal listener stuff*********************
-
-
-//***************Text Input listener things ********************//
+console.log("rrrrrrrrr ", userInputTextPost);
 
 postCategory.addEventListener('click', function(ui){
     console.log("==A Category was selected", ui.target.value);
@@ -62,6 +60,65 @@ userInputTextPost.addEventListener('keyup', function (ui) {
     console.log(" User input here : ", userInputTextPost);
 
 });
+
+userInputTextPost;
+
+submitButt.addEventListener('click', function(event){
+	//modal info 
+	console.log("goat ", userInputTextPost);
+
+ var description = document.getElementById('post-text');
+	description.value = userInputText.value;
+ var photoURL = document.getElementById('postPhoto').value;
+	
+	console.log('creating post');
+	console.log('description: ', description);
+	console.log('url: ', photoURL);
+
+
+	if(description == "" || photoURL == ""){
+		alert("One or more fields are missing");
+	}else{
+		
+	parent = document.getElementById('posts');
+	var postInfoContainer = document.createElement('div');
+	
+	var newDescription = document.createTextNode(description.value);
+	var newPhotoURL = document.createTextNode(photoURL);
+	var newPost = document.createElement('div');
+	
+	newPost.classList.add('post');
+	
+	var postImageContainer = document.createElement('div');
+	postImageContainer.classList.add('post-image-container');
+	newPost.appendChild(postImageContainer);
+	
+	var postImage = document.createElement('img');
+	postImage.classList.add('post-image-container');
+	
+//	postImage.setAttribute('src', photoURL);	// causes error
+	
+	postImageContainer.appendChild(postImage);
+	
+	var postContents = document.createElement('div');
+	postContents.classList.add('post-contents');
+	newPost.appendChild(postInfoContainer);
+	newPost.appendChild(postContents);
+	
+		parent.appendChild(newPost);
+			
+	}
+
+    modal.style.display ='none';
+
+});
+
+//******************************End of Modal listener stuff*********************
+
+
+//***************Text Input listener things ********************//
+
+
 
 //***************End of Text Input listener things ***************//
 
@@ -117,11 +174,13 @@ function addBlog(photoURL, category, textInput) {
 	*/
 	
   // Create the containing <div> element.
+  /*
   var postDiv = document.createElement('div');
   postDiv.classList.add('post');
   postDiv.setAttribute('data-price', price);
   postDiv.setAttribute('data-city', city);
   postDiv.setAttribute('data-condition', condition);
+*/
 
   // Create the inner post-contents <div> and add it to the post <div>.
   var postContentsDiv = document.createElement('div');
@@ -139,7 +198,6 @@ function addBlog(photoURL, category, textInput) {
 
   var postImg = document.createElement('img');
   postImg.src = photoURL;
-  postImg.alt = description;
   postImageContainerDiv.appendChild(postImg);
 
   /*
@@ -151,20 +209,12 @@ function addBlog(photoURL, category, textInput) {
   postInfoContainerDiv.classList.add('post-info-container');
   postContentsDiv.appendChild(postInfoContainerDiv);
 
-  var spaceText1 = document.createTextNode(' ');
-  postInfoContainerDiv.appendChild(spaceText1);
-
-  var postPriceSpan = document.createElement('span');
-  postPriceSpan.classList.add('post-price');
+  var postTextSpan = document.createElement('span');
   postPriceSpan.textContent = textInput;
   postInfoContainerDiv.appendChild(postPriceSpan);
 
-  var spaceText2 = document.createTextNode(' ');
-  postInfoContainerDiv.appendChild(spaceText2);
-
-  var postCitySpan = document.createElement('span');
-  postCitySpan.classList.add('post-city');
-  postCitySpan.textContent = '(' + city + ')';
+  var postCatSpan = document.createElement('span');
+  postCitySpan.textContent = '(' + category + ')';
   postInfoContainerDiv.appendChild(postCitySpan);
 
   /*
