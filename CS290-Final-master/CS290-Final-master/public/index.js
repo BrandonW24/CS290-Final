@@ -79,13 +79,14 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	//parent = document.getElementById('posts');
+	motherBlorg = document.getElementById('blorgs');
 	var postSpan = document.createElement('span');
-	postSpan.classList.add('menu-items');
+    postSpan.classList.add('menu-items');
+    motherBlorg.appendChild(postSpan);
 	
 	var contentDiv = document.createElement('div');
 	contentDiv.classList.add('post-class');
-	postSpan.appendChild(contentDiv);
+	motherBlorg.appendChild(contentDiv);
 	
 	var imageDiv = document.createElement('div');
 	imageDiv.classList.add('photo-class');
@@ -98,16 +99,8 @@ submitButt.addEventListener('click', function(event){
 	var textContainerDiv = document.createElement('div');
 	textContainerDiv.classList.add('text-class');
 	contentDiv.appendChild(textContainerDiv);
-	poop;
 	
-	var newDescription = document.createTextNode(description.value);
-	var newPhotoURL = document.createTextNode(photoURL);
-	var newPost = document.createElement('div');
-	
-	newPost.classList.add('post');
 
-	postImageContainer.appendChild(postImage);
-	
 	var postContents = document.createElement('div');
 	postContents.classList.add('post-contents');
 	newPost.appendChild(postInfoContainer);
