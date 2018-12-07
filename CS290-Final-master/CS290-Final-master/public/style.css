@@ -93,6 +93,18 @@ h3 {
   max-width: 300px;
 }
 
+.text-class{
+  font-family: 'Oswald', sans-serif;
+	color: #dadada; 
+	font-size: 20px;
+	margin: 0px 150px 15px 100px;
+	line-height: 30px;	
+}
+
+.photo-class{
+  max-height: 240px;
+  max-width: 300px;
+}
 
 .button{
   font-family: "Garamond", "Comic Sans", cursive;
