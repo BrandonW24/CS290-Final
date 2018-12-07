@@ -80,18 +80,18 @@ submitButt.addEventListener('click', function(event){
 	}else{
 		
 	parent = document.getElementById('posts');
-	var postInfoContainer = document.createElement('div');
+    var postInfoContainer = document.createElement('div');
+    postInfoContainer.id = 'post';
+    parent.appendChild(postInfoContainer)
+
 	
 	var newDescription = document.createTextNode(description.value);
 	var newPhotoURL = document.createTextNode(photoURL);
 	var newPost = document.createElement('div');
-    
-    var createAdivPost = document.createElement("div");
-    createAdivPost.id = "posts";
-    createAdivPost.appendChild(newDescription);
-    bigPostThing.appendChild(createAdivPost);
+   	newPost.classList.add('post-text');
 
-	newPost.classList.add('post');
+    postInfoContainer.appendChild(newPhotoURL);
+
 	
 	var postImageContainer = document.createElement('div');
 	postImageContainer.classList.add('post-image-container');
