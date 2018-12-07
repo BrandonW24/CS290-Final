@@ -79,52 +79,79 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	//parent = document.getElementById('posts');
-	var postSpan = document.createElement('span');
-	postSpan.classList.add('menu-items');
-	
-	var contentDiv = document.createElement('div');
-	contentDiv.classList.add('post-class');
-	postSpan.appendChild(contentDiv);
-	
-	var imageDiv = document.createElement('div');
-	imageDiv.classList.add('photo-class');
-	contentDiv.appendChild(imageDiv);
-	
-	var postImage = document.createElement('img');
-	postImage.src = photoURL;
-	imageDiv.appendChild(postImage);
-	
-	var textContainerDiv = document.createElement('div');
-	textContainerDiv.classList.add('text-class');
-	contentDiv.appendChild(textContainerDiv);
-	
+	parent = document.getElementById('posts');
+    var postInfoContainer = document.createElement('div');
+    postInfoContainer.id = 'post';
+    parent.appendChild(postInfoContainer)
+
 	
 	var newDescription = document.createTextNode(description.value);
-	var newPhotoURL = document.createTextNode(photoURL);
+    var newPhotoURL = document.createElement("img");
+    newPhotoURL.src = photoURL;
 	var newPost = document.createElement('div');
-	
-	newPost.classList.add('post');
+   	newPost.classList.add('post');
 
-	postImageContainer.appendChild(postImage);
+    postInfoContainer.appendChild(newPhotoURL);
+
 	
-	var postContents = document.createElement('div');
-	postContents.classList.add('post-contents');
-	newPost.appendChild(postInfoContainer);
-	newPost.appendChild(postContents);
+	var postImageContainer = document.createElement('div');
+	postImageContainer.classList.add('post-image-container');
+	newPost.appendChild(postImageContainer);
 	
-	var content = document.createElement('p');
-	content.classList.add('cool-story');
-	content.textContent = description;
-	postContents.appendChild(content);
-	
-	var postsSection = document.getElementById('posts');
-	blogSection.appendChild(postSpan);
-			
-		modal.style.display ='none';
-			
-	}
-});
+	var postImage = document.createElement('img');
+	postImage.classList.add('post-image-container');
+    var description = document.getElementById('userInpText').value;
+    var photoURL = document.getElementById('photoURLinput').value;
+       
+       console.log('creating post');
+       console.log('description: ', description);
+       console.log('url: ', photoURL);
+   
+   
+       if(description == "" || photoURL == ""){
+           alert("One or more fields are missing");
+       }else{
+           
+       motherBlorg = document.getElementById('blorgs');
+       var postSpan = document.createElement('span');
+       postSpan.classList.add('menu-items');
+       motherBlorg.appendChild(postSpan);
+       
+       var contentDiv = document.createElement('div');
+       contentDiv.classList.add('post-class');
+       motherBlorg.appendChild(contentDiv);
+       
+       var imageDiv = document.createElement('div');
+       imageDiv.classList.add('photo-class');
+       contentDiv.appendChild(imageDiv);
+       
+       var postImage = document.createElement('img');
+       postImage.src = photoURL;
+       imageDiv.appendChild(postImage);
+       
+       var textContainerDiv = document.createElement('div');
+       textContainerDiv.classList.add('text-class');
+       contentDiv.appendChild(textContainerDiv);
+       
+       var postContents = document.createElement('div');
+       postContents.classList.add('post-contents');
+       newPost.appendChild(postInfoContainer);
+       newPost.appendChild(postContents);
+       
+       var content = document.createElement('p');
+       content.classList.add('cool-story');
+       content.textContent = description;
+       postContents.appendChild(content);
+       
+       var postsSection = document.getElementById('blorgs');
+       blogSection.appendChild(postSpan);
+               
+           modal.style.display ='none';
+               
+       }
+   }});
+   
+   
 
 //******************************End of Modal listener stuff*********************
 
@@ -238,5 +265,3 @@ var createAdivPost = document.createElement("div");
 createAdivPost.id = "posts";
 
 var createAnImgDiv = document.createElement("div");
-createAnImgDiv.id = "postPhoto";
- 
