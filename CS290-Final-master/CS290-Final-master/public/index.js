@@ -85,7 +85,12 @@ submitButt.addEventListener('click', function(event){
 	var newDescription = document.createTextNode(description.value);
 	var newPhotoURL = document.createTextNode(photoURL);
 	var newPost = document.createElement('div');
-	
+    
+    var createAdivPost = document.createElement("div");
+    createAdivPost.id = "posts";
+    createAdivPost.appendChild(newDescription);
+    bigPostThing.appendChild(createAdivPost);
+
 	newPost.classList.add('post');
 	
 	var postImageContainer = document.createElement('div');
