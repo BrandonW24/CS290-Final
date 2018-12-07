@@ -42,8 +42,13 @@ console.log("rrrrrrrrr ", userInputTextPost);
 postCategory.addEventListener('click', function(ui){
     console.log("==A Category was selected", ui.target.value);
     userSelectedCat = ui.target.value;
+// console.log("rrrrrrrrr ", userInputTextPost);
 
-});
+// postCategory.addEventListener('click', function(ui){
+//     console.log("==A Category was selected", ui.target.value);
+//     userSelectedCat = ui.target.value;
+
+// });
 
 
 
@@ -83,11 +88,8 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	motherBlorg = document.getElementById('blorgs');
-	var postSpan = document.createElement('span');
-    postSpan.classList.add('menu-items');
-    motherBlorg.appendChild(postSpan);
-	
+	motherBlorg = document.getElementById('bigPostContainer');
+
 	var contentDiv = document.createElement('div');
 	contentDiv.classList.add('post-class');
 	motherBlorg.appendChild(contentDiv);
@@ -236,3 +238,20 @@ createAdivPost.id = "posts";
 var createAnImgDiv = document.createElement("div");
 createAnImgDiv.id = "postPhoto";
  
+
+userInputPhotoURL.addEventListener('keyup', function(ui){
+    
+        console.log("The user typed something ");
+        userInputPhotoURL = ui.target.value.toLowerCase();
+        console.log(" User input here : ", userInputPhotoURL);
+    
+    });
+    
+    userInputTextPost.addEventListener('keyup', function (ui) {
+    
+        console.log("The user typed something ");
+        userInputTextPost = ui.target.value;
+        console.log(" User input here : ", userInputTextPost);
+    
+    });
+    
