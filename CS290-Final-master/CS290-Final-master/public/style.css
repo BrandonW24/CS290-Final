@@ -1,6 +1,6 @@
 body{
 
-    font-family: "Garamond", "Comic Sans", cursive; 
+  font-family: "Garamond", "Comic Sans", cursive; 
 	font-size: 24px;
 	background-image: linear-gradient(white, black);
 	color: black
@@ -137,7 +137,7 @@ input[type=submit] {
 	display: block;
     margin: 10px auto;
     padding:8px 15px; 
-    background:#ccc; 
+    background:#393e3f;  
     border:0 none;
     cursor:pointer;
     -webkit-border-radius: 5px;
@@ -160,7 +160,7 @@ input[type=submit]:hover {
   height: 58%;
   width:50%;
   overflow: auto;
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: rgb(69, 73, 68);
   color:white;
   animation-name:ThereHeIs;
   animation-duration:1s;
