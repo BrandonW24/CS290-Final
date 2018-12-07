@@ -85,7 +85,7 @@ submitButt.addEventListener('click', function(event){
     parent.appendChild(postInfoContainer)
 
 	
-	var newDescription = document.createTextNode(description.value);
+	var newDescription = document.createTextNode(description);
     var newPhotoURL = document.createElement("img");
     newPhotoURL.src = photoURL;
 	var newPost = document.createElement('div');
@@ -103,7 +103,7 @@ submitButt.addEventListener('click', function(event){
     postTextContent.classList.add('text-class');
     postTextContent.value = userInputTextPost;
     newPhotoURL.appendChild(newDescription);
-    console.log("postText content", postTextContent.value);
+    console.log("postText content", postTextContent);
     newPhotoURL.appendChild(postTextContent);
 
 	var postImage = document.createElement('img');
@@ -139,8 +139,9 @@ submitButt.addEventListener('click', function(event){
        
        var textContainerDiv = document.createElement('div');
        textContainerDiv.classList.add('text-class');
-       textContainerDiv.value = userInputTextPost;
-       console.log('text cont content', textContainerDiv.value);
+       newDescription.value = description;
+       textContainerDiv.appendChild(newDescription);
+       console.log('text cont content', description);
        contentDiv.appendChild(textContainerDiv);
        
        var postContents = document.createElement('div');
