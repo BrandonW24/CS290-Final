@@ -97,7 +97,13 @@ submitButt.addEventListener('click', function(event){
 	var postImageContainer = document.createElement('div');
 	postImageContainer.classList.add('post-image-container');
 	newPost.appendChild(postImageContainer);
-	
+    
+    var postTextContent = document.createElement('div');
+    postTextContent.classList.add('text-class');
+    postTextContent.value = userInputTextPost;
+    console.log("postText content", postTextContent.value);
+    postInfoContainer.appendChild(postTextContent);
+
 	var postImage = document.createElement('img');
 	postImage.classList.add('post-image-container');
     var description = document.getElementById('userInpText').value;
