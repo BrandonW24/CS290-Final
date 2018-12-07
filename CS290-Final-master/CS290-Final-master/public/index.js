@@ -41,8 +41,9 @@ function outOftheModalClick(e){
 
 //***************Text Input listener things ********************//
 
-postCategory.addEventListener('click', function(){
-    console.log("==A Category was selected");
+postCategory.addEventListener('click', function(ui){
+    console.log("==A Category was selected", ui.target.value);
+    userSelectedCat = ui.target.value;
 
 });
 
@@ -57,7 +58,7 @@ userInputPhotoURL.addEventListener('keyup', function(ui){
 userInputTextPost.addEventListener('keyup', function (ui) {
 
     console.log("The user typed something ");
-    userInputTextPost = ui.target.value.toLowerCase();
+    userInputTextPost = ui.target.value;
     console.log(" User input here : ", userInputTextPost);
 
 });
