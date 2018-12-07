@@ -23,41 +23,68 @@
                 <h1 class="blog-site-name"> Awesome Blog of Everything™ </h1>
         </header>
 
-        <nav class="homeBar">
-                <a href="welcomePage.html" <span class="menu-items">Home Button</span><a href="generalBlogPostPage.html" <span class="menu-items">Blog Menu Button</span></a>
-				<a <span class="menu-items">Click here to add a post!</span> </a>
-                <button id="modalButt" class="button"> Click here to add a post! </button>
-                <div id="modal-thing" class="modal">
-                        <div class "modal-content">
-                                <span class="closeBUTT">&times;</span>
-                                <h2>(gentle gasp)</h2>
-                                <p>fock</p>
-                                <p>Photo URL:</p>
-                                <br>
-                                <input type="text" name="photoURL" style="position:relative; top:-45px; left:50px;">
-                                <br> 
-                                <p>Text:</p>
-                                <br>
-                                <textarea rows="4" cols="50" style="position:relative; top:-45px; left:50px;"></textarea>
-                                <input type="submit" value="Submit">
-                        </div>
-                </div>
+        <nav class ="homeBar">
+            <a href="welcomePage.html" <span class="menu-items">Home Button</span><a href="generalBlogPostPage.html" <span class="menu-items">Blog Menu Button</span></a>
+            <a><span class = "menu-items" id = "moneyButt" onclick = "PlaySound()"> $ $ $ $ $ </span></a>
+            <button id="modalButt" class="button"> Click here to add a post! </button>
+            
+            <div id="modal-thing" class="modal">
+                    <div class "modal-content">
+                            <span class="closeBUTT">&times;</span>
+                            					
+            <fieldset id="post-category-fieldset" class="post-fieldset">
+                  <legend>Category</legend>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-travel" value="Travel" checked>
+                    <label for="post-category-travel">Travel</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-hot-pockets" value="Hot Pockets">
+                    <label for="post-category-hot-pockets">Lava bois</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-makeup" value="Makeup">
+                    <label for="post-category-makeup">Makeup</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-memes" value="Memes">
+                    <label for="post-category-memes">Memes</label>
+                  </div>
+            </fieldset>
+                            <h2>(gentle gasp)</h2>
+                            <p>fock</p>
+                            <p>Photo URL:</p>
+                            <br>
+                            <input type="text" name="photoURL" style="position:relative; top:-45px; left:50px;" id = "photoURLinput">
+                            <br> 
+                            <p>Text:</p>
+                            <br>
+                            <textarea rows="4" cols="50" style="position:relative; top:-45px; left:50px;" id = "userInpText"></textarea>
+                            <input type="submit" value="Submit" id = "submit-butt">
+                    </div>
+            </div>
 
         </nav>
-        
-		<span class = "menu-items" id = "bigPostContainer">
-            <div id = "posts">
-                    <div id = "postPhoto">
-                          <img src = "makeup.png" style="width:300px;height:300px;">
-                     </div>
-                <div id = "post-text">
-		        <h2> Bad makeup experience.</h2>
-		        <p> One time, when I was a kid, I tried to imitate that scene in Mulan where Mulan is getting her makeup 
-                    done before meeting with the matchmaker. I painted my lips with red nail polish, and they immediately
-                    started to sting a lot, and I wanted to die.
-                </p>
-                </div>
-        </span>
-      
+        <section id="blorgs">	
+                <span class = "menu-items" id = "bigPostContainer">
+                         <div class = "post-class" id = "post-id">
+                        <div class = "photo-class" id = "postPhoto">
+                        <img src = "birp.jpg" style="width:300px;height:300px;">
+                        </div>
+                        <div class = "text-class" id = "post-text">
+                        <p class = "cool-story">The other night, I was starving, and had very little food. Thankfully, my roommate let me have one of her hot pockets
+                                 to snack on. I gleefully heated up the heavenly treat and rushed back to my room to devour it. Since I was super starving,
+                                I didn't give it enough time to cool down, and the lava within poured into my mouth. I needed food in my stomach, so I 
+                                powered through it with teary eyes.</p>
+                            
+                                        </div>
+                            
+                                </span>
+                                    </section>
+
+        </div>
+
     </body>
+    
+    
 </html>
