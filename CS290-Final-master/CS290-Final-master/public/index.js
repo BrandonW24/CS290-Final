@@ -67,9 +67,8 @@ submitButt.addEventListener('click', function(event){
 	//modal info 
 	console.log("goat ", userInputTextPost);
 
- var description = document.getElementById('post-text');
-	description.value = userInputText.value;
- var photoURL = document.getElementById('postPhoto').value;
+ var description = document.getElementById('userInpText').value;
+ var photoURL = document.getElementById('photoURLinput').value;
 	
 	console.log('creating post');
 	console.log('description: ', description);
