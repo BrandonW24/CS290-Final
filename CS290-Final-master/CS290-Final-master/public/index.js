@@ -79,19 +79,19 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	parent = document.getElementById('posts');
-    var postInfoContainer = document.createElement('div');
-    postInfoContainer.id = 'post';
-    parent.appendChild(postInfoContainer)
+	// parent = document.getElementById('posts');
+    // var postInfoContainer = document.createElement('div');
+    // postInfoContainer.id = 'post';
+    // parent.appendChild(postInfoContainer)
 
 	
-	var newDescription = document.createTextNode(description.value);
-    var newPhotoURL = document.createElement("img");
-    newPhotoURL.src = photoURL;
-	var newPost = document.createElement('div');
-   	newPost.classList.add('post');
+	// var newDescription = document.createTextNode(description.value);
+    // var newPhotoURL = document.createElement("img");
+    // newPhotoURL.src = photoURL;
+	// var newPost = document.createElement('div');
+   	// newPost.classList.add('post');
 
-    postInfoContainer.appendChild(newPhotoURL);
+    // postInfoContainer.appendChild(newPhotoURL);
 
 	
 	var postImageContainer = document.createElement('div');
@@ -163,34 +163,6 @@ moneyButt.addEventListener('click', function(){
 });
 
 //********* Money stuff ************//
-
-$(moneyButt).makeItRain();
-
-var moneymoneymoney = new Audio();
-var randomNumbo = Math.floor((Math.random() * 10) + 1);
-
-var discoBall = document.createElement("img");
-discoBall.src = "disco_ball.gif";
-var welcomePagePhotos = document.getElementById("welcome-page-container");
-
-if(randomNumbo >= 5 && randomNumbo != 10){
-    moneymoneymoney.src = "lodesOmone.mp3";
-}else if(randomNumbo < 5) {
-    moneymoneymoney.src = "theOtherMoneySong.mp3"
-    }else if (randomNumbo == 10){
-        moneymoneymoney.src = "carelessWhisper.mp3"
-        welcomePagePhotos.appendChild(discoBall);
-        document.getElementById("welcome-page-container").style.h2;
-        //10% chance to get careless whisper
-        //adds disco ball to the page
-        // Once you get careless whisper you can click the button
-        // to play it again until you refresh the page
-    };
-
-function PlaySound(){
-moneymoneymoney.play();
-
-};
 
 //*********************** Insert Post Stuff **********************//
 
@@ -265,3 +237,34 @@ var createAdivPost = document.createElement("div");
 createAdivPost.id = "posts";
 
 var createAnImgDiv = document.createElement("div");
+
+//********* Money stuff ************//
+
+$(moneyButt).makeItRain();
+
+var moneymoneymoney = new Audio();
+var randomNumbo = Math.floor((Math.random() * 10) + 1);
+
+var discoBall = document.createElement("img");
+discoBall.src = "disco_ball.gif";
+var welcomePagePhotos = document.getElementById("welcome-page-container");
+
+if(randomNumbo >= 5 && randomNumbo != 10){
+    moneymoneymoney.src = "lodesOmone.mp3";
+}else if(randomNumbo < 5) {
+    moneymoneymoney.src = "theOtherMoneySong.mp3"
+    }else if (randomNumbo == 10){
+        moneymoneymoney.src = "carelessWhisper.mp3"
+        welcomePagePhotos.appendChild(discoBall);
+        document.getElementById("welcome-page-container").style.h2;
+        //10% chance to get careless whisper
+        //adds disco ball to the page
+        // Once you get careless whisper you can click the button
+        // to play it again until you refresh the page
+    };
+
+function PlaySound(){
+moneymoneymoney.play();
+
+};
+
