@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+            <meta charset="utf-8">
+
+            <link rel="stylesheet" href="style.css">
+            <title>Ballin' blog</title> <!-- This is just a place holder page title, eventually we're
+                                goings to want to replace a lot of this with template
+                                variables, but this is just the ground work.-->
+
+            <!-- Third party plugins / stylesheets would go here if we need them -->
+            <script src = "index.js" charset = "utf-8" defer></script>
+    </head>
+	
+    <body>
+        <header>
+
+                <div class="header-image-container">
+                        <img src="the2.jpg" alt="THE">
+                      </div>
+                <h1 class="blog-site-name"> Awesome Blog of Everything™ </h1>
+        </header>
+
+        <nav class="homeBar">
+                <a href="welcomePage.html" <span class="menu-items">Home Button</span><a href="generalBlogPostPage.html" <span class="menu-items">Blog Menu Button</span></a>
+				<a <span class="menu-items">Click here to add a post!</span> </a>
+                <button id="modalButt" class="button"> Click here to add a post! </button>
+                <div id="modal-thing" class="modal">
+                        <div class "modal-content">
+                                <span class="closeBUTT">&times;</span>
+                                <h2>(gentle gasp)</h2>
+                                <p>fock</p>
+                                <p>Photo URL:</p>
+                                <br>
+                                <input type="text" name="photoURL" style="position:relative; top:-45px; left:50px;">
+                                <br> 
+                                <p>Text:</p>
+                                <br>
+                                <textarea rows="4" cols="50" style="position:relative; top:-45px; left:50px;"></textarea>
+                                <input type="submit" value="Submit">
+                        </div>
+                </div>
+
+        </nav>
+        
+		<span class = "menu-items" id = "bigPostContainer">
+            <div id = "posts">
+                    <div id = "postPhoto">
+                          <img src = "makeup.png" style="width:300px;height:300px;">
+                     </div>
+                <div id = "post-text">
+		        <h2> Bad makeup experience.</h2>
+		        <p> One time, when I was a kid, I tried to imitate that scene in Mulan where Mulan is getting her makeup 
+                    done before meeting with the matchmaker. I painted my lips with red nail polish, and they immediately
+                    started to sting a lot, and I wanted to die.
+                </p>
+                </div>
+        </span>
+
+    </body>
+</html>

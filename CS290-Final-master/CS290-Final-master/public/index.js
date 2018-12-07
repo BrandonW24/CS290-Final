@@ -52,7 +52,7 @@ userInputPhotoURL.addEventListener('keyup', function(ui){
     console.log(" User input here : ", userInputPhotoURL);
 
 });
-*/
+
 userInputTextPost.addEventListener('keyup', function (ui) {
 
     console.log("The user typed something ");
@@ -60,7 +60,7 @@ userInputTextPost.addEventListener('keyup', function (ui) {
     console.log(" User input here : ", userInputTextPost);
 
 });
-
+*/
 userInputTextPost;
 
 submitButt.addEventListener('click', function(event){
@@ -76,7 +76,7 @@ submitButt.addEventListener('click', function(event){
 
 
 	if(description == "" || photoURL == ""){
-		alert("One or more fields are missing");
+		alert("Please fill out the entire form.");
 	}else{
 		
 	parent = document.getElementById('blorgs');
