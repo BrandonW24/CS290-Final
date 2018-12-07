@@ -37,13 +37,13 @@ function outOftheModalClick(e){
 
 }
 
-console.log("rrrrrrrrr ", userInputTextPost);
+// console.log("rrrrrrrrr ", userInputTextPost);
 
-postCategory.addEventListener('click', function(ui){
-    console.log("==A Category was selected", ui.target.value);
-    userSelectedCat = ui.target.value;
+// postCategory.addEventListener('click', function(ui){
+//     console.log("==A Category was selected", ui.target.value);
+//     userSelectedCat = ui.target.value;
 
-});
+// });
 
 userInputPhotoURL.addEventListener('keyup', function(ui){
 
@@ -61,7 +61,7 @@ userInputTextPost.addEventListener('keyup', function (ui) {
 
 });
 
-userInputTextPost;
+
 
 submitButt.addEventListener('click', function(event){
 	//modal info 
@@ -79,11 +79,8 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	motherBlorg = document.getElementById('blorgs');
-	var postSpan = document.createElement('span');
-    postSpan.classList.add('menu-items');
-    motherBlorg.appendChild(postSpan);
-	
+	motherBlorg = document.getElementById('bigPostContainer');
+
 	var contentDiv = document.createElement('div');
 	contentDiv.classList.add('post-class');
 	motherBlorg.appendChild(contentDiv);
@@ -111,7 +108,7 @@ submitButt.addEventListener('click', function(event){
 	content.textContent = description;
 	postContents.appendChild(content);
 	
-	var postsSection = document.getElementById('posts');
+	var postsSection = document.getElementById('blorgs');
 	blogSection.appendChild(postSpan);
 			
 		modal.style.display ='none';
@@ -233,3 +230,20 @@ createAdivPost.id = "posts";
 var createAnImgDiv = document.createElement("div");
 createAnImgDiv.id = "postPhoto";
  
+
+userInputPhotoURL.addEventListener('keyup', function(ui){
+    
+        console.log("The user typed something ");
+        userInputPhotoURL = ui.target.value.toLowerCase();
+        console.log(" User input here : ", userInputPhotoURL);
+    
+    });
+    
+    userInputTextPost.addEventListener('keyup', function (ui) {
+    
+        console.log("The user typed something ");
+        userInputTextPost = ui.target.value;
+        console.log(" User input here : ", userInputTextPost);
+    
+    });
+    
