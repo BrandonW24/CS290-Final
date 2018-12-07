@@ -79,19 +79,19 @@ submitButt.addEventListener('click', function(event){
 		alert("One or more fields are missing");
 	}else{
 		
-	// parent = document.getElementById('posts');
-    // var postInfoContainer = document.createElement('div');
-    // postInfoContainer.id = 'post';
-    // parent.appendChild(postInfoContainer)
+	parent = document.getElementById('blorgs');
+    var postInfoContainer = document.createElement('div');
+    postInfoContainer.id = 'bigPostContainer';
+    parent.appendChild(postInfoContainer)
 
 	
-	// var newDescription = document.createTextNode(description.value);
-    // var newPhotoURL = document.createElement("img");
-    // newPhotoURL.src = photoURL;
-	// var newPost = document.createElement('div');
-   	// newPost.classList.add('post');
+	var newDescription = document.createTextNode(description.value);
+    var newPhotoURL = document.createElement("img");
+    newPhotoURL.src = photoURL;
+	var newPost = document.createElement('div');
+   	newPost.classList.add('post');
 
-    // postInfoContainer.appendChild(newPhotoURL);
+    postInfoContainer.appendChild(newPhotoURL);
 
 	
 	var postImageContainer = document.createElement('div');
