@@ -1,8 +1,8 @@
 body{
 
-    font-family: "Garamond", "Comic Sans", cursive; 
-	font-size: 18px;
-	background-color: gray;
+  font-family: "Garamond", "Comic Sans", cursive; 
+	font-size: 24px;
+	background-image: linear-gradient(white, black);
 	color: black
 }
 
@@ -15,7 +15,7 @@ header {
   }
   
 a {
-	color: black;
+	color: #68babd;
 	text-decoration: none;
 }
 
@@ -25,13 +25,13 @@ nav{
 }
 
 .menu-items {
-  display: inline-block;
+  display: block;
   font-size: 14px;
   padding: 3px;
   margin: 3px 5px;
   border: 1px solid #ababab;
   border-radius: 3px;
-  background: #f67811;
+  background: #1b2122;
 }
 
 .menu-items:hover{
@@ -51,15 +51,15 @@ h3 {
     vertical-align: top;
     height: 150px;
     width: 300px;
-    margin: 10px;
-    padding: 10px;
+    margin: 95px;
+    padding: 67px;
     border: 1px solid #dadada;
     border-radius: 3px;	
 }
 
  p{
 	font-family: 'Oswald', sans-serif;
-	color: black; 
+	color: #dadada; 
 	font-size: 20px;
 	margin: 0px 150px 15px 100px;
 	line-height: 30px;	
@@ -70,11 +70,13 @@ h3 {
   vertical-align: top;
   height: 250px;
   width: 300px;
-  margin: 10px;
-  padding: 10px;
+  margin: 75px;
+  padding: 50px;
   border: 1px solid #dadada;
   border-radius: 3px;
-
+  position: relative;
+  top: 10px;
+  left: 180px;
 }
 
 .category-contents {
@@ -90,3 +92,137 @@ h3 {
   max-height: 240px;
   max-width: 300px;
 }
+
+.text-class{
+  font-family: 'Oswald', sans-serif;
+	color: #dadada; 
+	font-size: 20px;
+	margin: 0px 150px 15px 100px;
+	line-height: 30px;	
+}
+
+.photo-class{
+  max-height: 60%;
+  max-width: 60%;
+}
+
+.button{
+  font-family: "Garamond", "Comic Sans", cursive;
+  font-size:14px;  
+  background-color:#1b2122;
+  color:#68babd;
+  border:0;
+}
+
+.button:hover{
+
+  background:#68babd;
+  color:#1b2122;
+
+}
+
+legend{
+	color: black;
+	font-family: 'Oswald' cursive; 
+	font-size: 20px;	
+}
+
+fieldset{
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	font-size: 15px;
+}
+
+input[type=submit] {
+	display: block;
+    margin: 10px auto;
+    padding:8px 15px; 
+    background:#393e3f;  
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+}
+
+input[type=submit]:hover {
+	background:#68babd;
+	color:#1b2122;
+}
+.modal{
+
+  display:none;
+  position:fixed;
+  z-index:1;
+  left: 500px;
+  top: 231px;
+  height: 58%;
+  width:50%;
+  overflow: auto;
+  background-color: rgb(69, 73, 68);
+  color:white;
+  animation-name:ThereHeIs;
+  animation-duration:1s;
+
+}
+
+.modal-content{
+
+  background-color:#f4f4f4;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0  rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.12);
+  animation-name:ThereHeIs;
+  animation-duration:3s;
+
+}
+@keyframes ThereHeIs{
+  from{opacity: 0};
+  toP{opacity: 1};
+}
+
+
+.closeBUTT{
+
+  color:#ccc;
+  float:right;
+  font-size: 50px;
+  animation-name:GOODBYE;
+  animation-duration:3s;
+
+}
+@keyframes GOODBYE{
+  from{opacity:1};
+  to{opacity:0};
+}
+
+
+.closeBUTT:hover,.closeBUTT:focus{
+
+  color:#25E1E7;
+  text-decoration: none;
+  cursor: pointer;
+
+
+}
+
+.moneyButt:hover{
+
+  color: green;
+
+};
+
+
+#menu-items{
+
+  display: block;
+  font-size: 14px;
+  padding: 3px;
+  margin: 3px 5px;
+  border: 1px solid #ababab;
+  border-radius: 3px;
+  background: #1b2122;
+
+};

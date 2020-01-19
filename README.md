@@ -1,5 +1,4 @@
 # CS290-Final
-asdfklmkv
 
 CS 290 Final Project
 

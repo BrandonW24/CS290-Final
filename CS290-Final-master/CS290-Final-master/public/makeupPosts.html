@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+            <meta charset="utf-8">
+
+            <link rel="stylesheet" href="style.css">
+            <title>Ballin' blog</title> <!-- This is just a place holder page title, eventually we're
+                                goings to want to replace a lot of this with template
+                                variables, but this is just the ground work.-->
+
+            <!-- Third party plugins / stylesheets would go here if we need them -->
+            <script src = "index.js" charset = "utf-8" defer></script>
+    </head>
+	
+    <body>
+        <header>
+
+                <div class="header-image-container">
+                        <img src="the2.jpg" alt="THE">
+                      </div>
+                <h1 class="blog-site-name"> Awesome Blog of Everything™ </h1>
+        </header>
+
+        <nav class ="homeBar">
+            <a href="welcomePage.html" <span class="menu-items">Home Button</span><a href="generalBlogPostPage.html" <span class="menu-items">Blog Menu Button</span></a>
+            <a><span class = "menu-items" id = "moneyButt" onclick = "PlaySound()"> $ $ $ $ $ </span></a>
+            <button id="modalButt" class="button"> Click here to add a post! </button>
+            
+            <div id="modal-thing" class="modal">
+                    <div class "modal-content">
+                            <span class="closeBUTT">&times;</span>
+                            					
+            <fieldset id="post-category-fieldset" class="post-fieldset">
+                  <legend>Category</legend>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-travel" value="Travel" checked>
+                    <label for="post-category-travel">Travel</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-hot-pockets" value="Hot Pockets">
+                    <label for="post-category-hot-pockets">Lava bois</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-makeup" value="Makeup">
+                    <label for="post-category-makeup">Makeup</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="post-category" id="post-category-memes" value="Memes">
+                    <label for="post-category-memes">Memes</label>
+                  </div>
+            </fieldset>
+                            <h2>(gentle gasp)</h2>
+                            <p>Photo URL:</p>
+                            <br>
+                            <input type="text" name="photoURL" style="position:relative; top:-45px; left:50px;" id = "photoURLinput">
+                            <br> 
+                            <p>Text:</p>
+                            <br>
+                            <textarea rows="4" cols="50" style="position:relative; top:-45px; left:50px;" id = "userInpText"></textarea>
+                            <input type="submit" value="Submit" id = "submit-butt">
+                    </div>
+            </div>
+
+        </nav>
+        <section id="blorgs">	
+                <span class = "menu-items" id = "bigPostContainer">
+                         <div class = "post-class" id = "post-id">
+                        <div class = "photo-class" id = "postPhoto">
+                        <img src = "makeup.png" style="width:300px;height:300px;">
+                        </div>
+                        <div class = "text-class" id = "post-text">
+                        <p class = "cool-story"> (insert makeup story) </p>
+                            
+                                        </div>
+                            
+                                </span>
+                                    </section>
+
+        </div>
+
+    </body>
+    
+    
+</html>
